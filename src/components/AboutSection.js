@@ -1,9 +1,10 @@
 import React from "react";
 import home1 from "../img/home1.png";
 //Styled
-import styled from "styled-components";
 
-export const AbouSection = () => {
+import { StyledAbout, Description, Img, Hide } from "../styles.js";
+
+export const AboutSection = () => {
   return (
     <StyledAbout>
       <Description>
@@ -33,35 +34,3 @@ export const AbouSection = () => {
     </StyledAbout>
   );
 };
-
-//Styled Components
-const StyledAbout = styled.div`
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-  color: white;
-`;
-
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const Img = styled.div`
-  img {
-    flex: 1;
-    overflow: hidden;
-    width: 80%;
-    border-radius: 750px;
-    border: solid 2px #23d997;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
